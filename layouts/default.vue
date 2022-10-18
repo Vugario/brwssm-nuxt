@@ -12,15 +12,17 @@
     <nav
       class="hidden md:block bg-white border-t border-b border-gray-300 px-3"
     >
-      <div class="mx-auto max-w-2xl">
+      <div class="nav-bar mx-auto max-w-2xl">
         <ul>
           <li class="inline-block">
-            <a href="#" class="p-3 inline-block hover:text-gray-500"> Home </a>
+            <NuxtLink to="/" exact class="p-3 inline-block text-gray-500">
+              Home
+            </NuxtLink>
           </li>
           <li class="inline-block">
-            <a href="#" class="p-3 inline-block text-gray-500 hover:text-black">
+            <NuxtLink to="reports" exact class="p-3 inline-block text-gray-500">
               Uitrukken
-            </a>
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -31,9 +33,9 @@
     </div>
 
     <div
-      class="fixed bottom-0 left-0 w-full bg-white border-t border-b border-gray-400 flex"
+      class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-b border-gray-400 flex"
     >
-      <div class="flex-1 text-center">
+      <div class="tab-bar flex-1 text-center">
         <NuxtLink to="/" exact class="inline-block w-full p-4 text-gray-400">
           Home
         </NuxtLink>
