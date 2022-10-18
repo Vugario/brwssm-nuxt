@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nuxt-link-active {
+  @apply text-black;
+  border-top: 2px solid black;
+  margin-top: -1px;
+}
